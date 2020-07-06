@@ -21,15 +21,30 @@ function auth() {
 // Les boutons
 
 function sour() {
-    for (i = 0; i < autors.length; i++) {}
+    auth()
+    for (i = 0; i < sourc.length; i++) {
+        if (sourc[i].plateform === "youtube") {
+            oe.innerHTML += '<div class="g-ytsubscribe" data-channelid="' + sourc[i].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
+        }
+    }
 }
 
 function fana() {
-    for (ii = 0; ii < autors.length; ii++) {}
+    auth()
+    for (ii = 0; ii < fanar.length; ii++) {
+        if (fanar[ii].plateform === "youtube") {
+            oe.innerHTML += '<div class="g-ytsubscribe" data-channelid="' + fanar[ii].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
+        }
+    }
 }
 
 function musi() {
-    for (iii = 0; iii < autors.length; iii++) {}
+    auth()
+    for (iii = 0; iii < musiq.length; iii++) {
+        if (musiq[iii].plateform === "youtube") {
+            oe.innerHTML += '<div class="g-ytsubscribe" data-channelid="' + musiq[iii].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
+        }
+    }
 }
 
 /* Les boutons */
