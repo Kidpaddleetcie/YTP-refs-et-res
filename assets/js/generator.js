@@ -31,3 +31,8 @@ function fana() {
 function musi() {
     for (iii = 0; iii < autors.length; iii++) {}
 }
+
+/* Les boutons */
+so.addEventListener("click", sour);
+fa.addEventListener("click", fana);
+mu.addEventListener("click", musi);
