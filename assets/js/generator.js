@@ -12,18 +12,17 @@ let iii = 0;
 // Affichage des auteurs
 function auth() {
     for (a = 0; a < autors.length; a++) {
-        if (autors[a].plateform === "youtube") {
+        if (autors[a].plateform === plateform[0]) {
             as.innerHTML += '<div class="g-ytsubscribe" data-channelid="' + autors[a].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
         }
     }
 }
 
-// Les boutons
-
+// Les boutons et construction
 function sour() {
     auth()
     for (i = 0; i < sourc.length; i++) {
-        if (sourc[i].plateform === "youtube") {
+        if (sourc[i].plateform === plateform[0]) {
             oe.innerHTML += '<div class="g-ytsubscribe" data-channelid="' + sourc[i].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
         }
     }
@@ -32,7 +31,7 @@ function sour() {
 function fana() {
     auth()
     for (ii = 0; ii < fanar.length; ii++) {
-        if (fanar[ii].plateform === "youtube") {
+        if (fanar[ii].plateform === plateform[0]) {
             oe.innerHTML += '<div class="g-ytsubscribe" data-channelid="' + fanar[ii].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
         }
     }
@@ -41,7 +40,7 @@ function fana() {
 function musi() {
     auth()
     for (iii = 0; iii < musiq.length; iii++) {
-        if (musiq[iii].plateform === "youtube") {
+        if (musiq[iii].plateform === plateform[0]) {
             oe.innerHTML += '<div class="g-ytsubscribe" data-channelid="' + musiq[iii].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
         }
     }
