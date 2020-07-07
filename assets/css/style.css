@@ -57,12 +57,12 @@ body {
 #oeuvres {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
 #oeuvres div {
-  width: 35%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
