@@ -53,4 +53,8 @@ body {
   color: yellow;
   font-size: 1.56em;
 }
+
+#oeuvres div {
+  width: 50%;
+}
 /*# sourceMappingURL=style.css.map */
