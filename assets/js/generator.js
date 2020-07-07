@@ -35,9 +35,7 @@ function sour() {
     auth()
     remiseAzero()
     for (i = 0; i < sourc.length; i++) {
-        if (sourc[i].plateform === plateform[0]) {
-            i_sourc += '<iframe width="560" height="315" src="' + sourc[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-        }
+        i_sourc += '<iframe width="560" height="315" src="' + sourc[i] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     }
     oe.innerHTML = i_sourc;
 }
