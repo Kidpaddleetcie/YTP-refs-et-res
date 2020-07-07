@@ -27,7 +27,7 @@ function auth() {
             a_authors += '<div class="g-ytsubscribe" data-channelid="' + autors[a].id + '" data-layout="full" data-theme="dark" data-count="default"></div>';
         }
     }
-    oe.innerHTML = a_authors;
+    as.innerHTML = a_authors;
 }
 
 // Les boutons et construction
