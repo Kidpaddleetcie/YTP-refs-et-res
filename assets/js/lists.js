@@ -27,6 +27,11 @@ const autors = [{
         name: "Bonne Nuit Les Petits - Chaine Officielle",
         plateform: plateform[0],
         id: "UCX6DywxDwQ8tyQkSnqgbRZg"
+    },
+    {
+        name: "Futureidiots",
+        plateform: plateform[0],
+        id: "UCJSd4lWard3TBg2OmaMlLfg"
     }
 ];
 /* Les sources */
