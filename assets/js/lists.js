@@ -32,25 +32,30 @@ const autors = [{
         name: "Futureidiots",
         plateform: plateform[0],
         id: "UCJSd4lWard3TBg2OmaMlLfg"
+    },
+    {
+        name: "Dominic Ninmark",
+        plateform: plateform[0],
+        id: "UCBUc9zdtUNTvXU1XRJosj5A"
     }
 ];
 /* Les sources */
 const sourc = [{
     name: "",
     plateform: plateform[0],
-    id: ""
+    link: ""
 }];
 
 /* Les fan-arts */
 const fanar = [{
     name: "",
     plateform: plateform[0],
-    id: ""
+    link: ""
 }]
 
 /* Les musiques */
 const musiq = [{
     name: "",
     plateform: plateform[0],
-    id: ""
+    link: ""
 }]
