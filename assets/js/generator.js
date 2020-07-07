@@ -14,7 +14,11 @@ let i_sourc = ' ';
 let ii_fanar = ' ';
 let iii_musi = ' ';
 
-
+function remiseAzero() {
+    i_sourc = " ";
+    ii_fanar = " ";
+    iii_musi = " ";
+}
 
 // Affichage des auteurs
 function auth() {
@@ -29,6 +33,7 @@ function auth() {
 // Les boutons et construction
 function sour() {
     auth()
+    remiseAzero()
     for (i = 0; i < sourc.length; i++) {
         if (sourc[i].plateform === plateform[0]) {
             i_sourc += '<iframe width="560" height="315" src="' + sourc[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
@@ -39,6 +44,7 @@ function sour() {
 
 function fana() {
     auth()
+    remiseAzero()
     for (ii = 0; ii < fanar.length; ii++) {
         if (fanar[ii].plateform === plateform[0]) {
             ii_fanar += '<iframe width="560" height="315" src="' + fanar[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
@@ -49,6 +55,7 @@ function fana() {
 
 function musi() {
     auth()
+    remiseAzero()
     for (iii = 0; iii < musiq.length; iii++) {
         if (musiq[iii].plateform === plateform[0]) {
             iii_musi += '<iframe width="560" height="315" src="' + musiq[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
