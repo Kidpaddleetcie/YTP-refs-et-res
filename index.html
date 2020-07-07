@@ -5,26 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>YTP ref's et res's</title>
 </head>
 
 <body>
-    <header class="header rounded-lg">
-        <a href="#sources" id="sou">Sources</a>
-        <a href="#fan-arts" id="fan">Fan-arts</a>
-        <a href="#musiques" id="mus">Musiques</a>
-    </header>
 
-
+    <button id="main" type="button" class="btn btn-secondary btn-lg btn-block lancer"><i class="fas fa-power-off"></i></button>
     <main class="main container-fluid">
-        <h1 id="titre">Les sources</h1>
-        <div class="row ">
-            <section id="authors" class="overflow-auto py-3 px-lg-5 col-3 border-right"></section>
 
-            <section id="oeuvres" class="overflow-auto py-3 px-lg-5 col-9 border-left"></section>
-        </div>
+        <section id="authors">
+            <h2>Auteurs</h2>
+            <div id="_aut">
+                <div class="g-ytsubscribe" data-channelid="UCKz3LAuAOgdD47bwPU4vV0A" data-layout="full" data-count="default"></div>
+                <div class="g-ytsubscribe" data-channelid="UCWQ2PIaUUzmXG8VWwdKCHwA" data-layout="full" data-count="default"></div>
+                <div class="g-ytsubscribe" data-channelid="UCG1h6IDf9PSYc2tfQG-prdg" data-layout="full" data-count="default"></div>
+                <div class="g-ytsubscribe" data-channelid="UCX6DywxDwQ8tyQkSnqgbRZg" data-layout="full" data-count="default"></div>
+                <div class="g-ytsubscribe" data-channelid="UCJSd4lWard3TBg2OmaMlLfg" data-layout="full" data-count="default"></div>
+                <div class="g-ytsubscribe" data-channelid="UCBUc9zdtUNTvXU1XRJosj5A" data-layout="full" data-count="default"></div>
+            </div>
+        </section>
+        <section id="sources">
+            <h2>Sources</h2>
+            <div class="source w-auto p-3">
+                <div class="row clearfix">
+                    <div id="_sou" class="col-12  h-50"></div>
+                    <select name="les_sources" class="col-12" id="sousou" size="9"></select>
+                </div>
+            </div>
+        </section>
+        <section id="fan_arts">
+            <h2>Fan-arts</h2>
+            <div id="_fan"></div>
+        </section>
+        <section id="musiques">
+            <h2>Musiques</h2>
+            <div id="_mus"></div>
+        </section>
     </main>
 
 
@@ -32,11 +51,10 @@
 
 
     <!-- les scripts -->
-    <script src="https://apis.google.com/js/platform.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="assets/js/lists.js"></script>
     <script src="assets/js/generator.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
 </body>

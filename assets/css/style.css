@@ -5,68 +5,63 @@ body {
   height: 100vh;
 }
 
-.header {
-  background-color: white;
+.lancer {
+  width: 100vw;
+  height: 100vh;
+  margin: auto auto;
   position: fixed;
-  top: -90px;
-  left: -120px;
-  border: 5px groove white;
-  display: flexbox;
-  -webkit-box-shadow: rgba(207, 207, 207, 0.5) 0px 2px 0.1px;
-          box-shadow: rgba(207, 207, 207, 0.5) 0px 2px 0.1px;
-  padding: 15px;
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.5em;
-  width: 175px;
-  height: 150px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  z-index: 99;
-}
-
-.header:hover {
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  background-color: rgba(36, 36, 36, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  font-size: 5em;
 }
 
-.header a {
-  color: #cfcfcf;
-  display: inline;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
-.header a:link {
-  text-decoration: none;
-}
-
-.header a:visited {
-  color: #969696;
-}
-
-.header a:active {
-  color: #c4c4c4;
-}
-
-.header a:hover {
-  color: yellow;
-  font-size: 1.56em;
-}
-
-#titre {
+main section {
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border: 1px white solid;
+  width: 48vw;
+  height: 48vh;
   text-align: center;
 }
 
-#oeuvres {
+main section h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.gridou {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
 
-#oeuvres div {
-  width: 100%;
+.gridou div {
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.h-50 {
+  width: 100% !important;
 }
 /*# sourceMappingURL=style.css.map */
