@@ -33,6 +33,7 @@ function auth() {
 
 // Les boutons et construction
 function sour() {
+    ti.innerHTML = "Les sources";
     auth()
     remiseAzero()
     document.title = "Les sources";
@@ -45,6 +46,7 @@ function sour() {
 function fana() {
     auth()
     remiseAzero()
+    ti.innerHTML = "Les fan-arts";
     document.title = "Les fan-arts";
     for (ii = 0; ii < fanar.length; ii++) {
         if (fanar[ii].plateform === plateform[0]) {
@@ -57,6 +59,7 @@ function fana() {
 function musi() {
     auth()
     remiseAzero()
+    ti.innerHTML = "Les musiques";
     document.title = "Les musiques";
     for (iii = 0; iii < musiq.length; iii++) {
         if (musiq[iii].plateform === plateform[0]) {

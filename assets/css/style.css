@@ -54,6 +54,10 @@ body {
   font-size: 1.56em;
 }
 
+#titre {
+  text-align: center;
+}
+
 #oeuvres {
   display: -ms-grid;
   display: grid;

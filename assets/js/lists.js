@@ -4,6 +4,7 @@ const fa = document.getElementById("fan");
 const mu = document.getElementById("mus");
 const as = document.getElementById("authors");
 const oe = document.getElementById("oeuvres");
+const ti = document.getElementById("titre");
 
 // Les genres de plateformes
 const plateform = ["youtube", "twitter", "soundcloud", "tumblr", "deviantart", "instagram"]
