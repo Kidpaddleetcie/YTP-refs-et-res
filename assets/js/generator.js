@@ -37,7 +37,7 @@ function sour() {
     remiseAzero()
     document.title = "Les sources";
     for (i = 0; i < sourc.length; i++) {
-        i_sourc += '<div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube-nocookie.com/embed/' + sourc[i] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+        i_sourc += '<div class="embed-responsive embed-responsive-16by9"><iframe  class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/' + sourc[i] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
     }
     oe.innerHTML = i_sourc;
 }
@@ -48,7 +48,7 @@ function fana() {
     document.title = "Les fan-arts";
     for (ii = 0; ii < fanar.length; ii++) {
         if (fanar[ii].plateform === plateform[0]) {
-            ii_fanar += '<div class="embed-responsive embed-responsive-4by3"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' + fanar[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+            ii_fanar += '<div class="embed-responsive embed-responsive-4by3"><iframe  class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/' + fanar[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
         }
     }
     oe.innerHTML = ii_fanar;
@@ -60,7 +60,7 @@ function musi() {
     document.title = "Les musiques";
     for (iii = 0; iii < musiq.length; iii++) {
         if (musiq[iii].plateform === plateform[0]) {
-            iii_musi += '<div class="embed-responsive embed-responsive-4by3"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' + musiq[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+            iii_musi += '<div class="embed-responsive embed-responsive-4by3"><iframe  class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/' + musiq[i].link + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
         }
     }
     oe.innerHTML = iii_musi;
