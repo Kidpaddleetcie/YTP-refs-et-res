@@ -5,50 +5,70 @@ body {
     height: 100vh;
 }
 
-.lancer {
-    width: 100vw;
-    height: 100vh;
-    margin: auto auto;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    font-size: 5em;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    section {
-        justify-items: stretch;
-        align-items: stretch;
-        border: 1px white solid;
-        width: 48vw;
-        height: 48vh;
-        text-align: center;
-        h2 {
+@media only screen and (min-width: 503px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        section {
+            justify-items: stretch;
+            align-items: stretch;
+            border: 1px white solid;
+            width: 49vw;
+            height: 47vh;
             text-align: center;
-            padding: 0;
-            margin: 0;
+            h2 {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
         }
     }
-}
-
-.gridou {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    div {
-        justify-items: stretch;
-        align-items: stretch;
+    .gridou {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        div {
+            justify-items: stretch;
+            align-items: stretch;
+        }
+    }
+    .h-50 {
+        width: 100% !important;
     }
 }
 
-.h-50 {
-    width: 100% !important;
+@media only screen and (max-width: 502px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+        section {
+            justify-items: stretch;
+            align-items: stretch;
+            border: 1px white solid;
+            width: 95vw;
+            height: 47vh;
+            text-align: center;
+            h2 {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    .gridou {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        div {
+            justify-items: stretch;
+            align-items: stretch;
+        }
+    }
+    .h-50 {
+        width: 100% !important;
+    }
 }
